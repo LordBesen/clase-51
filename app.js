@@ -10,15 +10,15 @@ const Tareas =  require('./models/Tareas')
 const main = async() => {
     
     let opt = '';
-   
+  
     do {
-  //opt = await  inquirerMenu();
+  opt = await  inquirerMenu();
  // console.log({opt});
  const tareas = new Tareas();
  const tarea = new Tarea('comida');
 
- tareas._listado[tarea.id] = tarea;
- console.log(tareas);
+ //tareas._listado[tarea.id] = tarea;
+ //console.log(tareas);
   
   
         await pausa();

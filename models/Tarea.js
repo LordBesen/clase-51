@@ -11,9 +11,10 @@ class Tarea  {
 
 
     constructor(desc) {
+        this.desc = desc;
         this.id = uuidv4();
-        this.des = desc;
-
+        
+        this.completadoEn = null;
 
     }
 
